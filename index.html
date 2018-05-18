@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tone.js Metronome</title>
+    <script src="js/Tone.js"></script>
+    <script src="js/main.js"></script>
+    <!--<script src="js/NexusUI.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Tone.js Metronome Example</h1>
+
+    <div id="metronome"></div>
+   
+   <button class="btn default" id="play">Play</button><button class="btn default" id="stop">Stop</button>
+    <form> 
+       <input id="bpm" type="range" name="amountRange" min="30" max="300" value="120" step="5" oninput="this.form.amountInput.value=this.value" />
+       <input type="number" name="amountInput" min="30" max="300" value="120" step="5" oninput="this.form.amountRange.value=this.value" />
+       <label><b>BPM</b></label>
+    
+    <div id="toggleBox">
+    <img src='images/hihat.svg' title='hihat' alternate='Hi-Hat' width='75px'/>
+    <label class="switch">
+    <input type="checkbox" id="soundToggle">
+    <span class="slider round"></span>
+    </label><img src='images/woodblock.svg' title='woodblock' alternate='Wood Block' width='75px'/>
+    </div>        
+    </form>
+
+    <div id="dial"></div>
+
+</body>
+
+</html>
